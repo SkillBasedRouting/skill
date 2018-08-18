@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="primary">
+		<jta-data-source>java:jboss/datasources/skillservice_db</jta-data-source>
+		
+		<class>com.routing.skillservice.feature.user.repository.impl.jpa.model.JPAUser</class>
+		<class>com.routing.skillservice.feature.group.repository.impl.jpa.model.JPAGroup</class>
+		<class>com.routing.skillservice.feature.shape.model.Shape</class>
+		<class>com.routing.skillservice.feature.shape.model.IntegerShape</class>
+		<class>com.routing.skillservice.feature.shape.model.BooleanShape</class>
+		<class>com.routing.skillservice.feature.shape.model.EnumShape</class>
+		<class>com.routing.skillservice.feature.skill.model.Skill</class>
+		<class>com.routing.skillservice.feature.skill.model.BooleanSkill</class>
+		<class>com.routing.skillservice.feature.skill.model.IntegerSkill</class>
+		<class>com.routing.skillservice.feature.skill.model.EnumSkill</class>
+		
+		<properties>
+
+			<!-- Hibernate Core -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="false" />
+
+		</properties>
+	</persistence-unit>
+</persistence>

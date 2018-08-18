@@ -1,0 +1,5 @@
+com/routing/skillservice/repository/impl/ldap/connection/LdapConnectionProducer.class
+com/routing/skillservice/repository/impl/ldap/LdapGroupRepositoryImpl.class
+com/routing/skillservice/repository/impl/ldap/LdapUserRepositoryImpl.class
+com/routing/skillservice/repository/impl/ldap/model/LdapGroup.class
+com/routing/skillservice/repository/impl/ldap/model/LdapUser.class

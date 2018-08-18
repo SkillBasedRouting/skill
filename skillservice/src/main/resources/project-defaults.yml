@@ -1,0 +1,20 @@
+swarm:
+  deployment:
+#    skillservice-1.0.0-RC1.war:
+#      web:
+#        login-config:
+#          auth-method: KEYCLOAK
+#        security-constraints:
+#          - url-pattern: /api/v1/*
+#            methods: [GET]
+#            roles: ['http://routing.com/skillservice.readonly']
+#          - url-pattern: /api/v1/*
+#            methods: [POST, PUT, PATCH, DELETE]
+#            roles: ['http://routing.com/skillservice']
+  datasources:
+    data-sources:
+      skillservice_db:
+        driver-name: h2
+        connection-url: jdbc:h2:./persistence/skillservice
+        user-name: sa
+        password: sa
